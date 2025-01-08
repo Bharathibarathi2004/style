@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <fieldset>
+    <div class="parent">
+        
+    <form id="form">
+    <h1><i>Registation Form</i></h1>
+        <input class="one" type="text" name="fn" id="firstname"><br><br><br>
+        <div class="msg"></div>
+        <br>
+        <input class="one" type="text" name="fn" id="lastname" ><br><br><br>
+        <div class="msg"></div>
+        <br>
+        <input type="radio" name="gender" value="Male">
+        <label for="">Male</label>
+        <input type="radio" name="gender" value="Female">
+        <label for="">Female</label>
+        <input type="radio" name="gender" value="Other">
+        <label for="">Other</label>
+        <br><br>
+        <div class="msg"></div>
+        <input type="checkbox" name="qualification" >
+        <label for="">SSLC</label>
+        <input type="checkbox" name="qualification">
+        <label for="">HSLC</label>
+        <input type="checkbox" name="qualification">
+        <label for="">Others</label><br>
+        <br>
+        <div class="msg"></div>
+        <select id="state" onchange="districtValue()">
+            <option value="">Select State</option>
+            <option value="TamilNadu">TamilNadu</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Goa">Goa</option>
+            <option value="Assam">Assam</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Rajasthan">Rajasthan</option>
+        </select><br><br>
+        <div class="msg"></div>
+        <select id="district">
+            <option value="">Select District</option>
+        </select><br><br>
+        <div class="msg"></div>
+        <button class="btn">submit </button>
+        <button class="btn">reset</button>
+    </form>
+</div>
+</fieldset>
+<script src="form.js"></script>
+</body>
+</html>
